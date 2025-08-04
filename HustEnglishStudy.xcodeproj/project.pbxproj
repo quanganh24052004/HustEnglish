@@ -6,17 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0851A8AD2E3D936900F5718B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0851A8AA2E3D936900F5718B /* ContentView.swift */; };
+		0851A8AE2E3D936900F5718B /* HustEnglishStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0851A8AB2E3D936900F5718B /* HustEnglishStudyApp.swift */; };
+		0851A8AF2E3D936900F5718B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0851A8A92E3D936900F5718B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		0851A89B2E3D934E00F5718B /* HustEnglishStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HustEnglishStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0851A8A92E3D936900F5718B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0851A8AA2E3D936900F5718B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0851A8AB2E3D936900F5718B /* HustEnglishStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HustEnglishStudyApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		0851A89D2E3D934E00F5718B /* HustEnglishStudy */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HustEnglishStudy;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0851A8982E3D934E00F5718B /* Frameworks */ = {
@@ -32,7 +33,7 @@
 		0851A8922E3D934E00F5718B = {
 			isa = PBXGroup;
 			children = (
-				0851A89D2E3D934E00F5718B /* HustEnglishStudy */,
+				0851A8AC2E3D936900F5718B /* HustEnglishStudy */,
 				0851A89C2E3D934E00F5718B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +44,16 @@
 				0851A89B2E3D934E00F5718B /* HustEnglishStudy.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0851A8AC2E3D936900F5718B /* HustEnglishStudy */ = {
+			isa = PBXGroup;
+			children = (
+				0851A8A92E3D936900F5718B /* Assets.xcassets */,
+				0851A8AA2E3D936900F5718B /* ContentView.swift */,
+				0851A8AB2E3D936900F5718B /* HustEnglishStudyApp.swift */,
+			);
+			path = HustEnglishStudy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +70,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				0851A89D2E3D934E00F5718B /* HustEnglishStudy */,
 			);
 			name = HustEnglishStudy;
 			packageProductDependencies = (
@@ -109,6 +117,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0851A8AF2E3D936900F5718B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0851A8AD2E3D936900F5718B /* ContentView.swift in Sources */,
+				0851A8AE2E3D936900F5718B /* HustEnglishStudyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
