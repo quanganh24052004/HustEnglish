@@ -10,6 +10,9 @@
 		0851A8AD2E3D936900F5718B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0851A8AA2E3D936900F5718B /* ContentView.swift */; };
 		0851A8AE2E3D936900F5718B /* HustEnglishStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0851A8AB2E3D936900F5718B /* HustEnglishStudyApp.swift */; };
 		0851A8AF2E3D936900F5718B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0851A8A92E3D936900F5718B /* Assets.xcassets */; };
+		2C95B6FF2E44A2B6008683D5 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B6FE2E44A2B5008683D5 /* TabModel.swift */; };
+		2C95B7012E44A2D1008683D5 /* TabBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7002E44A2D1008683D5 /* TabBarCustom.swift */; };
+		2C95B7042E44A3AC008683D5 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7032E44A3AC008683D5 /* Root.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +20,9 @@
 		0851A8A92E3D936900F5718B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0851A8AA2E3D936900F5718B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0851A8AB2E3D936900F5718B /* HustEnglishStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HustEnglishStudyApp.swift; sourceTree = "<group>"; };
+		2C95B6FE2E44A2B5008683D5 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
+		2C95B7002E44A2D1008683D5 /* TabBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustom.swift; sourceTree = "<group>"; };
+		2C95B7032E44A3AC008683D5 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,11 +55,62 @@
 		0851A8AC2E3D936900F5718B /* HustEnglishStudy */ = {
 			isa = PBXGroup;
 			children = (
+				2C95B7052E44A440008683D5 /* New Group */,
+				2C95B7022E44A39A008683D5 /* Root */,
+				2C95B6FA2E44A276008683D5 /* Components */,
 				0851A8A92E3D936900F5718B /* Assets.xcassets */,
 				0851A8AA2E3D936900F5718B /* ContentView.swift */,
 				0851A8AB2E3D936900F5718B /* HustEnglishStudyApp.swift */,
 			);
 			path = HustEnglishStudy;
+			sourceTree = "<group>";
+		};
+		2C95B6FA2E44A276008683D5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2C95B6FB2E44A281008683D5 /* TabBar */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2C95B6FB2E44A281008683D5 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2C95B6FC2E44A28F008683D5 /* Model */,
+				2C95B6FD2E44A292008683D5 /* View */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2C95B6FC2E44A28F008683D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C95B6FE2E44A2B5008683D5 /* TabModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C95B6FD2E44A292008683D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C95B7002E44A2D1008683D5 /* TabBarCustom.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C95B7022E44A39A008683D5 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2C95B7032E44A3AC008683D5 /* Root.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		2C95B7052E44A440008683D5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C95B7012E44A2D1008683D5 /* TabBarCustom.swift in Sources */,
+				2C95B6FF2E44A2B6008683D5 /* TabModel.swift in Sources */,
 				0851A8AD2E3D936900F5718B /* ContentView.swift in Sources */,
 				0851A8AE2E3D936900F5718B /* HustEnglishStudyApp.swift in Sources */,
+				2C95B7042E44A3AC008683D5 /* Root.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
