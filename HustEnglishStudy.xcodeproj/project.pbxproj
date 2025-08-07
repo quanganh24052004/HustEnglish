@@ -13,6 +13,8 @@
 		2C95B6FF2E44A2B6008683D5 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B6FE2E44A2B5008683D5 /* TabModel.swift */; };
 		2C95B7012E44A2D1008683D5 /* TabBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7002E44A2D1008683D5 /* TabBarCustom.swift */; };
 		2C95B7042E44A3AC008683D5 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7032E44A3AC008683D5 /* Root.swift */; };
+		2C95B7072E44A5F7008683D5 /* BezierCurvePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7062E44A5EA008683D5 /* BezierCurvePath.swift */; };
+		2C95B70A2E44A7B0008683D5 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7092E44A7A7008683D5 /* TabBarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		2C95B6FE2E44A2B5008683D5 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		2C95B7002E44A2D1008683D5 /* TabBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustom.swift; sourceTree = "<group>"; };
 		2C95B7032E44A3AC008683D5 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		2C95B7062E44A5EA008683D5 /* BezierCurvePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierCurvePath.swift; sourceTree = "<group>"; };
+		2C95B7092E44A7A7008683D5 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,8 @@
 		0851A8AC2E3D936900F5718B /* HustEnglishStudy */ = {
 			isa = PBXGroup;
 			children = (
-				2C95B7052E44A440008683D5 /* New Group */,
+				2C95B70B2E44B007008683D5 /* New Group */,
+				2C95B7052E44A440008683D5 /* Base */,
 				2C95B7022E44A39A008683D5 /* Root */,
 				2C95B6FA2E44A276008683D5 /* Components */,
 				0851A8A92E3D936900F5718B /* Assets.xcassets */,
@@ -76,6 +81,7 @@
 		2C95B6FB2E44A281008683D5 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				2C95B7082E44A753008683D5 /* ViewModel */,
 				2C95B6FC2E44A28F008683D5 /* Model */,
 				2C95B6FD2E44A292008683D5 /* View */,
 			);
@@ -106,7 +112,23 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		2C95B7052E44A440008683D5 /* New Group */ = {
+		2C95B7052E44A440008683D5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2C95B7062E44A5EA008683D5 /* BezierCurvePath.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2C95B7082E44A753008683D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2C95B7092E44A7A7008683D5 /* TabBarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2C95B70B2E44B007008683D5 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -186,9 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C95B7012E44A2D1008683D5 /* TabBarCustom.swift in Sources */,
+				2C95B7072E44A5F7008683D5 /* BezierCurvePath.swift in Sources */,
 				2C95B6FF2E44A2B6008683D5 /* TabModel.swift in Sources */,
 				0851A8AD2E3D936900F5718B /* ContentView.swift in Sources */,
 				0851A8AE2E3D936900F5718B /* HustEnglishStudyApp.swift in Sources */,
+				2C95B70A2E44A7B0008683D5 /* TabBarViewModel.swift in Sources */,
 				2C95B7042E44A3AC008683D5 /* Root.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,18 +8,6 @@ enum TabModel: String, CaseIterable {
     case setting = "Setting"
     
     var systemImage: String {
-//        switch self {
-//        case .dictionary:
-//            return "ic_dictionary"
-//        case .vocabulary:
-//            return "ic_vocabulary"
-//        case .review:
-//            return "ic_review"
-//        case .forum:
-//            return "ic_forum"
-//        case .setting:
-//            return "ic_setting"
-//        }
         switch self {
         case .dictionary:
             return "magnifyingglass"
@@ -35,4 +23,16 @@ enum TabModel: String, CaseIterable {
     }
 }
 
+//        switch self {
+//        case .dictionary:
+//            return "ic_dictionary"
+//        case .vocabulary:
+//            return "ic_vocabulary"
+//        case .review:
+//            return "ic_review"
+//        case .forum:
+//            return "ic_forum"
+//        case .setting:
+//            return "ic_setting"
+//        }
 

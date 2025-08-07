@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Root: View {
     
+    @StateObject private var viewModel = TabBarViewModel()
     @State private var tabSelection = 3
     @Namespace private var animation
     
@@ -26,7 +27,8 @@ struct Root: View {
                 .tag(5)
         }
         .overlay(alignment: .bottom) {
-            TabBarCustom(tabSelection: $tabSelection, animation: animation)
+            TabBarCustom(viewModel: viewModel, animation: animation)
+
         }
         .ignoresSafeArea()
     }

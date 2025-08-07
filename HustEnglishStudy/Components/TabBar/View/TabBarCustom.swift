@@ -1,68 +1,138 @@
+//import SwiftUI
+//
+//struct TabBarCustom: View {
+//    
+//    @Binding var tabSelection: Int
+//    var animation: Namespace.ID
+//    
+//    @State private var midPoint: CGFloat = 3.0
+//    
+//    private let screenWidth = UIApplication.shared.screenWidth
+//    private var tabWidth: CGFloat {
+//        return screenWidth/5
+//    }
+//    
+//    var body: some View {
+//        let iconH: CGFloat = screenWidth * (200/1000)
+//        ZStack {
+//            BezierCurvePath(midPoint: midPoint)
+//                .foregroundStyle(.black)
+//            
+//            HStack(spacing: 0.0) {
+//                ForEach(0..<TabModel.allCases.count, id: \.self) { index in
+//                    let tab = TabModel.allCases[index]
+//                    let isCurrent = tabSelection == index + 1
+//                    
+//                    Button {
+//                        withAnimation(.spring(response: 0.6,
+//                            dampingFraction: 0.7,
+//                            blendDuration: 0.7)) {
+//                            tabSelection = index + 1
+//                            midPoint = tabWidth * (-CGFloat(tabSelection-3))
+//                            }
+//                    } label: {
+//                        VStack(spacing: 2.0) {
+//                            Image(systemName: tab.systemImage)
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .aspectRatio(
+//                                        isCurrent ? 0.5 : 0.7,
+//                                        contentMode: .fit)
+//                                    .frame(
+//                                        width: isCurrent ? iconH : 35.0,
+//                                        height: isCurrent ? iconH : 35.0
+//                                    )
+//                                    .foregroundStyle(isCurrent ? .white : .gray)
+//                                    .background{
+//                                        if isCurrent {
+//                                            Circle()
+//                                                .fill(.black.gradient)
+//                                                .frame(width: iconH, height: iconH)
+//                                                .matchedGeometryEffect(id: "CircleAnimation", in: animation)
+//                                        }
+//                                    }
+//                                    .offset(y: isCurrent ? -iconH / 2 : 0)
+//                                if !isCurrent {
+//                                    Text(tab.rawValue)
+//                                        .font(.caption)
+//                                        .fontDesign(.rounded)
+//                                }
+//                        }
+//                        .frame(maxWidth: .infinity)
+//                        .foregroundStyle(
+//                            isCurrent ? .white : .gray
+//                        )
+//                        .offset(y: !isCurrent ? -5 : 0)
+//                    }
+//                    .buttonStyle(.plain)
+//                }
+//            }
+//        }
+//        .frame(height: iconH)
+//        .onAppear {
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+//                withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
+//                    midPoint = tabWidth * (-CGFloat(tabSelection - 3))
+//                }
+//            }
+//        }
+//    }
+//}
+
 import SwiftUI
 
 struct TabBarCustom: View {
-    
-    @Binding var tabSelection: Int
+    @ObservedObject var viewModel: TabBarViewModel
     var animation: Namespace.ID
-    
-    @State private var midPoint: CGFloat = 3.0
-    
+
     private let screenWidth = UIApplication.shared.screenWidth
     private var tabWidth: CGFloat {
-        return screenWidth/5
+        return screenWidth / 5
     }
-    
+
     var body: some View {
-        let iconH: CGFloat = screenWidth * (200/1000)
+        let iconH: CGFloat = screenWidth * (200 / 1000)
+
         ZStack {
-            BezierCurvePath(midPoint: midPoint)
+            BezierCurvePath(midPoint: viewModel.midPoint)
                 .foregroundStyle(.black)
-            
+
             HStack(spacing: 0.0) {
                 ForEach(0..<TabModel.allCases.count, id: \.self) { index in
                     let tab = TabModel.allCases[index]
-                    let isCurrent = tabSelection == index + 1
-                    
+                    let isCurrent = viewModel.tabSelection == index + 1
+
                     Button {
-                        withAnimation(.spring(response: 0.6,
-                            dampingFraction: 0.7,
-                            blendDuration: 0.7)) {
-                            tabSelection = index + 1
-                            midPoint = tabWidth * (-CGFloat(tabSelection-3))
-                            }
+                        viewModel.selectTab(index: index)
                     } label: {
                         VStack(spacing: 2.0) {
                             Image(systemName: tab.systemImage)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .aspectRatio(
-                                        isCurrent ? 0.5 : 0.7,
-                                        contentMode: .fit)
-                                    .frame(
-                                        width: isCurrent ? iconH : 35.0,
-                                        height: isCurrent ? iconH : 35.0
-                                    )
-                                    .foregroundStyle(isCurrent ? .white : .gray)
-                                    .background{
-                                        if isCurrent {
-                                            Circle()
-                                                .fill(.black.gradient)
-                                                .frame(width: iconH, height: iconH)
-                                                .matchedGeometryEffect(id: "CircleAnimation", in: animation)
-                                        }
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .aspectRatio(isCurrent ? 0.5 : 0.7, contentMode: .fit)
+                                .frame(
+                                    width: isCurrent ? iconH : 35.0,
+                                    height: isCurrent ? iconH : 35.0
+                                )
+                                .foregroundStyle(isCurrent ? .white : .gray)
+                                .background {
+                                    if isCurrent {
+                                        Circle()
+                                            .fill(.black.gradient)
+                                            .frame(width: iconH, height: iconH)
+                                            .matchedGeometryEffect(id: "CircleAnimation", in: animation)
                                     }
-                                    .offset(y: isCurrent ? -iconH / 2 : 0)
-//                            }
-                                if !isCurrent {
-                                    Text(tab.rawValue)
-                                        .font(.caption)
-                                        .fontDesign(.rounded)
                                 }
+                                .offset(y: isCurrent ? -iconH / 2 : 0)
+
+                            if !isCurrent {
+                                Text(tab.rawValue)
+                                    .font(.caption)
+                                    .fontDesign(.rounded)
+                            }
                         }
                         .frame(maxWidth: .infinity)
-                        .foregroundStyle(
-                            isCurrent ? .white : .gray
-                        )
+                        .foregroundStyle(isCurrent ? .white : .gray)
                         .offset(y: !isCurrent ? -5 : 0)
                     }
                     .buttonStyle(.plain)
@@ -70,22 +140,12 @@ struct TabBarCustom: View {
             }
         }
         .frame(height: iconH)
-//        .onAppear {
-//            //tabWidth = screenWidth/5
-//            midPoint = tabWidth * (-CGFloat(tabSelection-3))
-//        }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
-                withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
-                    midPoint = tabWidth * (-CGFloat(tabSelection - 3))
-                }
+                viewModel.selectTab(index: viewModel.tabSelection - 1)
             }
         }
     }
-}
-
-#Preview {
-    ContentView()
 }
 
 struct BezierCurvePath: Shape {
