@@ -11,7 +11,12 @@ struct Vocab: View {
     var body: some View {
         ZStack {
             Color.neutral01.ignoresSafeArea()
-            Text("Vocabulary")
+            VStack {
+                TextTitle(titleView: "Vocabulary")
+                
+                Spacer()
+            }
+            .padding(.horizontal, 16)
         }
     }
 }

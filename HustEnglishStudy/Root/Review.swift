@@ -11,11 +11,16 @@ struct Review: View {
     var body: some View {
         ZStack {
             Color.neutral01.ignoresSafeArea()
-            Text("Review")
+            VStack {
+                TextTitle(titleView: "Review")
+                
+                Spacer()
+            }
+            .padding(.horizontal, 16)
         }
     }
 }
 
 #Preview {
-    Review()
+    ContentView()
 }

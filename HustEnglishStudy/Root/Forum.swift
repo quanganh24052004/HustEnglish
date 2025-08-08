@@ -11,7 +11,12 @@ struct Forum: View {
     var body: some View {
         ZStack {
             Color.neutral01.ignoresSafeArea()
-            Text("Forum")
+            VStack {
+                TextTitle(titleView: "Forum")
+                
+                Spacer()
+            }
+            .padding(.horizontal, 16)
         }
     }
 }

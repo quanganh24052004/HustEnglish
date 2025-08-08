@@ -10,11 +10,16 @@
 		0851A8AD2E3D936900F5718B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0851A8AA2E3D936900F5718B /* ContentView.swift */; };
 		0851A8AE2E3D936900F5718B /* HustEnglishStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0851A8AB2E3D936900F5718B /* HustEnglishStudyApp.swift */; };
 		0851A8AF2E3D936900F5718B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0851A8A92E3D936900F5718B /* Assets.xcassets */; };
-		2C95B6FF2E44A2B6008683D5 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B6FE2E44A2B5008683D5 /* TabModel.swift */; };
-		2C95B7012E44A2D1008683D5 /* TabBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7002E44A2D1008683D5 /* TabBarCustom.swift */; };
+		2C49CF162E45F65900EDAC05 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49CF152E45F65900EDAC05 /* InputView.swift */; };
+		2C49CF1A2E45F8DB00EDAC05 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49CF192E45F8DB00EDAC05 /* LoginView.swift */; };
+		2C49CF332E45FEA000EDAC05 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49CF292E45FEA000EDAC05 /* TabModel.swift */; };
+		2C49CF342E45FEA000EDAC05 /* TabBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49CF2B2E45FEA000EDAC05 /* TabBarCustom.swift */; };
+		2C49CF352E45FEA000EDAC05 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49CF2D2E45FEA000EDAC05 /* TabBarViewModel.swift */; };
+		2C49CF362E45FEA000EDAC05 /* TextTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49CF302E45FEA000EDAC05 /* TextTitle.swift */; };
+		2C49CF392E45FED500EDAC05 /* AuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49CF382E45FED500EDAC05 /* AuthMethod.swift */; };
+		2C49CF3E2E45FF2A00EDAC05 /* AuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49CF3D2E45FF2A00EDAC05 /* AuthMethod.swift */; };
 		2C95B7042E44A3AC008683D5 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7032E44A3AC008683D5 /* Root.swift */; };
 		2C95B7072E44A5F7008683D5 /* BezierCurvePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7062E44A5EA008683D5 /* BezierCurvePath.swift */; };
-		2C95B70A2E44A7B0008683D5 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7092E44A7A7008683D5 /* TabBarViewModel.swift */; };
 		2C95B70D2E44B18B008683D5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B70C2E44B18B008683D5 /* UIApplication.swift */; };
 		2C95B7102E44BA97008683D5 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B70F2E44BA97008683D5 /* Review.swift */; };
 		2C95B7122E44BAC3008683D5 /* Vocap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7112E44BAC3008683D5 /* Vocap.swift */; };
@@ -28,11 +33,16 @@
 		0851A8A92E3D936900F5718B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0851A8AA2E3D936900F5718B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0851A8AB2E3D936900F5718B /* HustEnglishStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HustEnglishStudyApp.swift; sourceTree = "<group>"; };
-		2C95B6FE2E44A2B5008683D5 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
-		2C95B7002E44A2D1008683D5 /* TabBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustom.swift; sourceTree = "<group>"; };
+		2C49CF152E45F65900EDAC05 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		2C49CF192E45F8DB00EDAC05 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2C49CF292E45FEA000EDAC05 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
+		2C49CF2B2E45FEA000EDAC05 /* TabBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustom.swift; sourceTree = "<group>"; };
+		2C49CF2D2E45FEA000EDAC05 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		2C49CF302E45FEA000EDAC05 /* TextTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTitle.swift; sourceTree = "<group>"; };
+		2C49CF382E45FED500EDAC05 /* AuthMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMethod.swift; sourceTree = "<group>"; };
+		2C49CF3D2E45FF2A00EDAC05 /* AuthMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMethod.swift; sourceTree = "<group>"; };
 		2C95B7032E44A3AC008683D5 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		2C95B7062E44A5EA008683D5 /* BezierCurvePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierCurvePath.swift; sourceTree = "<group>"; };
-		2C95B7092E44A7A7008683D5 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		2C95B70C2E44B18B008683D5 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		2C95B70F2E44BA97008683D5 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		2C95B7112E44BAC3008683D5 /* Vocap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocap.swift; sourceTree = "<group>"; };
@@ -74,7 +84,7 @@
 				2C95B70B2E44B007008683D5 /* Extension */,
 				2C95B7052E44A440008683D5 /* Base */,
 				2C95B7022E44A39A008683D5 /* Root */,
-				2C95B6FA2E44A276008683D5 /* Components */,
+				2C49CF322E45FEA000EDAC05 /* Components */,
 				0851A8A92E3D936900F5718B /* Assets.xcassets */,
 				0851A8AA2E3D936900F5718B /* ContentView.swift */,
 				0851A8AB2E3D936900F5718B /* HustEnglishStudyApp.swift */,
@@ -82,49 +92,117 @@
 			path = HustEnglishStudy;
 			sourceTree = "<group>";
 		};
-		2C95B6FA2E44A276008683D5 /* Components */ = {
+		2C49CF172E45F8AD00EDAC05 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				2C95B6FB2E44A281008683D5 /* TabBar */,
+				2C49CF182E45F8B500EDAC05 /* LoginSignUp */,
+				2C95B7172E44BAEF008683D5 /* Setting.swift */,
 			);
-			path = Components;
+			path = Setting;
 			sourceTree = "<group>";
 		};
-		2C95B6FB2E44A281008683D5 /* TabBar */ = {
+		2C49CF182E45F8B500EDAC05 /* LoginSignUp */ = {
 			isa = PBXGroup;
 			children = (
-				2C95B7082E44A753008683D5 /* ViewModel */,
-				2C95B6FC2E44A28F008683D5 /* Model */,
-				2C95B6FD2E44A292008683D5 /* View */,
+				2C49CF192E45F8DB00EDAC05 /* LoginView.swift */,
 			);
-			path = TabBar;
+			path = LoginSignUp;
 			sourceTree = "<group>";
 		};
-		2C95B6FC2E44A28F008683D5 /* Model */ = {
+		2C49CF2A2E45FEA000EDAC05 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2C95B6FE2E44A2B5008683D5 /* TabModel.swift */,
+				2C49CF292E45FEA000EDAC05 /* TabModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		2C95B6FD2E44A292008683D5 /* View */ = {
+		2C49CF2C2E45FEA000EDAC05 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2C95B7002E44A2D1008683D5 /* TabBarCustom.swift */,
+				2C49CF2B2E45FEA000EDAC05 /* TabBarCustom.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2C49CF2E2E45FEA000EDAC05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2C49CF2D2E45FEA000EDAC05 /* TabBarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2C49CF2F2E45FEA000EDAC05 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2C49CF2A2E45FEA000EDAC05 /* Model */,
+				2C49CF2C2E45FEA000EDAC05 /* View */,
+				2C49CF2E2E45FEA000EDAC05 /* ViewModel */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2C49CF312E45FEA000EDAC05 /* Tilte */ = {
+			isa = PBXGroup;
+			children = (
+				2C49CF302E45FEA000EDAC05 /* TextTitle.swift */,
+			);
+			path = Tilte;
+			sourceTree = "<group>";
+		};
+		2C49CF322E45FEA000EDAC05 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2C49CF372E45FEA400EDAC05 /* AuthMethod */,
+				2C49CF2F2E45FEA000EDAC05 /* TabBar */,
+				2C49CF312E45FEA000EDAC05 /* Tilte */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2C49CF372E45FEA400EDAC05 /* AuthMethod */ = {
+			isa = PBXGroup;
+			children = (
+				2C49CF3B2E45FEE500EDAC05 /* Model */,
+				2C49CF3A2E45FEDD00EDAC05 /* View */,
+				2C49CF3C2E45FEED00EDAC05 /* ViewModel */,
+			);
+			path = AuthMethod;
+			sourceTree = "<group>";
+		};
+		2C49CF3A2E45FEDD00EDAC05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C49CF382E45FED500EDAC05 /* AuthMethod.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C49CF3B2E45FEE500EDAC05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C49CF3D2E45FF2A00EDAC05 /* AuthMethod.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C49CF3C2E45FEED00EDAC05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2C95B7022E44A39A008683D5 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				2C49CF172E45F8AD00EDAC05 /* Setting */,
 				2C95B7032E44A3AC008683D5 /* Root.swift */,
 				2C95B7132E44BADB008683D5 /* Dictionary.swift */,
 				2C95B7112E44BAC3008683D5 /* Vocap.swift */,
 				2C95B70F2E44BA97008683D5 /* Review.swift */,
 				2C95B7152E44BAE6008683D5 /* Forum.swift */,
-				2C95B7172E44BAEF008683D5 /* Setting.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -133,16 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				2C95B7062E44A5EA008683D5 /* BezierCurvePath.swift */,
+				2C49CF152E45F65900EDAC05 /* InputView.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		2C95B7082E44A753008683D5 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				2C95B7092E44A7A7008683D5 /* TabBarViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2C95B70B2E44B007008683D5 /* Extension */ = {
@@ -226,18 +297,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C95B70D2E44B18B008683D5 /* UIApplication.swift in Sources */,
-				2C95B7012E44A2D1008683D5 /* TabBarCustom.swift in Sources */,
 				2C95B7102E44BA97008683D5 /* Review.swift in Sources */,
 				2C95B7072E44A5F7008683D5 /* BezierCurvePath.swift in Sources */,
 				2C95B7182E44BAEF008683D5 /* Setting.swift in Sources */,
 				2C95B7142E44BADB008683D5 /* Dictionary.swift in Sources */,
-				2C95B6FF2E44A2B6008683D5 /* TabModel.swift in Sources */,
 				2C95B7122E44BAC3008683D5 /* Vocap.swift in Sources */,
+				2C49CF332E45FEA000EDAC05 /* TabModel.swift in Sources */,
+				2C49CF3E2E45FF2A00EDAC05 /* AuthMethod.swift in Sources */,
+				2C49CF342E45FEA000EDAC05 /* TabBarCustom.swift in Sources */,
+				2C49CF392E45FED500EDAC05 /* AuthMethod.swift in Sources */,
+				2C49CF352E45FEA000EDAC05 /* TabBarViewModel.swift in Sources */,
+				2C49CF362E45FEA000EDAC05 /* TextTitle.swift in Sources */,
 				0851A8AD2E3D936900F5718B /* ContentView.swift in Sources */,
 				0851A8AE2E3D936900F5718B /* HustEnglishStudyApp.swift in Sources */,
-				2C95B70A2E44A7B0008683D5 /* TabBarViewModel.swift in Sources */,
 				2C95B7042E44A3AC008683D5 /* Root.swift in Sources */,
+				2C49CF162E45F65900EDAC05 /* InputView.swift in Sources */,
 				2C95B7162E44BAE6008683D5 /* Forum.swift in Sources */,
+				2C49CF1A2E45F8DB00EDAC05 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
