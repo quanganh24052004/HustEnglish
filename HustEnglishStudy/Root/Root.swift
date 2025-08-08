@@ -10,26 +10,28 @@ import SwiftUI
 struct Root: View {
     
     @StateObject private var viewModel = TabBarViewModel()
-    @State private var tabSelection = 3
     @Namespace private var animation
     
     var body: some View {
-        TabView(selection: $tabSelection) {
-            Text("Tab content 1")
+        TabView(selection: $viewModel.tabSelection) {
+            Dictionary()
                 .tag(1)
-            Text("Tab content 2")
+            Vocab()
                 .tag(2)
-            Text("Tab content 2")
+            Review()
                 .tag(3)
-            Text("Tab content 4")
+            Forum()
                 .tag(4)
-            Text("Tab content 5")
+            Setting()
                 .tag(5)
         }
         .overlay(alignment: .bottom) {
             TabBarCustom(viewModel: viewModel, animation: animation)
 
         }
+//        .tabViewStyle(.page(indexDisplayMode: .never))
+//        .animation(.easeInOut, value: viewModel.tabSelection)
+//        .animation(.easeInOut, value: viewModel.midPoint)
         .ignoresSafeArea()
     }
 }

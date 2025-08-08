@@ -15,6 +15,12 @@
 		2C95B7042E44A3AC008683D5 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7032E44A3AC008683D5 /* Root.swift */; };
 		2C95B7072E44A5F7008683D5 /* BezierCurvePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7062E44A5EA008683D5 /* BezierCurvePath.swift */; };
 		2C95B70A2E44A7B0008683D5 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7092E44A7A7008683D5 /* TabBarViewModel.swift */; };
+		2C95B70D2E44B18B008683D5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B70C2E44B18B008683D5 /* UIApplication.swift */; };
+		2C95B7102E44BA97008683D5 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B70F2E44BA97008683D5 /* Review.swift */; };
+		2C95B7122E44BAC3008683D5 /* Vocap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7112E44BAC3008683D5 /* Vocap.swift */; };
+		2C95B7142E44BADB008683D5 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7132E44BADB008683D5 /* Dictionary.swift */; };
+		2C95B7162E44BAE6008683D5 /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7152E44BAE6008683D5 /* Forum.swift */; };
+		2C95B7182E44BAEF008683D5 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95B7172E44BAEF008683D5 /* Setting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		2C95B7032E44A3AC008683D5 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		2C95B7062E44A5EA008683D5 /* BezierCurvePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierCurvePath.swift; sourceTree = "<group>"; };
 		2C95B7092E44A7A7008683D5 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		2C95B70C2E44B18B008683D5 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		2C95B70F2E44BA97008683D5 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		2C95B7112E44BAC3008683D5 /* Vocap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocap.swift; sourceTree = "<group>"; };
+		2C95B7132E44BADB008683D5 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		2C95B7152E44BAE6008683D5 /* Forum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
+		2C95B7172E44BAEF008683D5 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +71,7 @@
 		0851A8AC2E3D936900F5718B /* HustEnglishStudy */ = {
 			isa = PBXGroup;
 			children = (
-				2C95B70B2E44B007008683D5 /* New Group */,
+				2C95B70B2E44B007008683D5 /* Extension */,
 				2C95B7052E44A440008683D5 /* Base */,
 				2C95B7022E44A39A008683D5 /* Root */,
 				2C95B6FA2E44A276008683D5 /* Components */,
@@ -108,6 +120,11 @@
 			isa = PBXGroup;
 			children = (
 				2C95B7032E44A3AC008683D5 /* Root.swift */,
+				2C95B7132E44BADB008683D5 /* Dictionary.swift */,
+				2C95B7112E44BAC3008683D5 /* Vocap.swift */,
+				2C95B70F2E44BA97008683D5 /* Review.swift */,
+				2C95B7152E44BAE6008683D5 /* Forum.swift */,
+				2C95B7172E44BAEF008683D5 /* Setting.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -128,11 +145,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		2C95B70B2E44B007008683D5 /* New Group */ = {
+		2C95B70B2E44B007008683D5 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2C95B70C2E44B18B008683D5 /* UIApplication.swift */,
 			);
-			path = "New Group";
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,13 +225,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C95B70D2E44B18B008683D5 /* UIApplication.swift in Sources */,
 				2C95B7012E44A2D1008683D5 /* TabBarCustom.swift in Sources */,
+				2C95B7102E44BA97008683D5 /* Review.swift in Sources */,
 				2C95B7072E44A5F7008683D5 /* BezierCurvePath.swift in Sources */,
+				2C95B7182E44BAEF008683D5 /* Setting.swift in Sources */,
+				2C95B7142E44BADB008683D5 /* Dictionary.swift in Sources */,
 				2C95B6FF2E44A2B6008683D5 /* TabModel.swift in Sources */,
+				2C95B7122E44BAC3008683D5 /* Vocap.swift in Sources */,
 				0851A8AD2E3D936900F5718B /* ContentView.swift in Sources */,
 				0851A8AE2E3D936900F5718B /* HustEnglishStudyApp.swift in Sources */,
 				2C95B70A2E44A7B0008683D5 /* TabBarViewModel.swift in Sources */,
 				2C95B7042E44A3AC008683D5 /* Root.swift in Sources */,
+				2C95B7162E44BAE6008683D5 /* Forum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
